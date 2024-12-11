@@ -37,7 +37,7 @@ metadata:
     #jira/project-key: IDP
     ## Jira plugin - End
   tags:
-    - workshop.username+nicholas_cicchetti@gmail.com
+    - nicholas_cicchetti@gmail.com
     - teama
 spec:
   type: service
