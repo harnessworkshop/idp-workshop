@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: workshop.username+nicholas_cicchetti@gmail.com-service
+  name: nicholas_cicchetti@gmail.com-service
   description: |
     My Example service which has something to do with APIs and database.
   links:
