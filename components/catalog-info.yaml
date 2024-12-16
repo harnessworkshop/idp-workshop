@@ -37,7 +37,7 @@ metadata:
     #jira/project-key: IDP
     ## Jira plugin - End
   tags:
-    - NickSpaghetti
+    - nickspaghetti
     - teama
 spec:
   type: service
