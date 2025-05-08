@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_idp_workshop_1746712651899-push-trigger-input-set
+  identifier: Build_idp_workshop_1746712651899pushtriggerinputset
+  orgIdentifier: idptcslab448org
+  projectIdentifier: shuvodidptcslab4480
+  pipeline:
+    identifier: Build_idp_workshop_1746712651899
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
