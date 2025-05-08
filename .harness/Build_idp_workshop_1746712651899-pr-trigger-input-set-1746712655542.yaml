@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_idp_workshop_1746712651899-pr-trigger-input-set
+  identifier: Build_idp_workshop_1746712651899prtriggerinputset
+  orgIdentifier: idptcslab448org
+  projectIdentifier: shuvodidptcslab4480
+  pipeline:
+    identifier: Build_idp_workshop_1746712651899
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
