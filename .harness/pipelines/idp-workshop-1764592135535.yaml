@@ -34,6 +34,12 @@ pipeline:
                     templateRef: Compile_Application
                     versionLabel: v0.1
               - step:
+                  name: Fortify
+                  identifier: Fortify
+                  template:
+                    templateRef: fortify
+                    versionLabel: v0.1
+              - step:
                   type: BuildAndPushDockerRegistry
                   name: Push to DockerHub
                   identifier: Push_to_DockerHub
@@ -46,6 +52,12 @@ pipeline:
                     caching: true
                     dockerfile: /harness/frontend-app/harness-webapp/Dockerfile
                     context: /harness/frontend-app/harness-webapp
+              - step:
+                  name: OWASP
+                  identifier: OWASP
+                  template:
+                    templateRef: owasp
+                    versionLabel: v0.1
           platform:
             os: Linux
             arch: Amd64
