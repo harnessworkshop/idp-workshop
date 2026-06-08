@@ -1,9 +1,14 @@
-apiVersion: backstage.io/v1alpha1
+apiVersion: harness.io/v1
 kind: Component
+name: my-example-service # <your-username>-service
+identifier: my_example_service # same as name but with underscores
+projectIdentifier: project_id # <your-username>
+orgIdentifier: org_id # <your-username> minus the ip## part
+owner: change-value # <team-name>
 metadata:
-  name: yournamehere-service
-  description: |
-    My Example service which has something to do with APIs and database.
+  description: My Example service which has something to do with APIs and database. # update desc
+  tags:
+    - yournamehere # <your-username>
   links:
     - title: Website
       url: http://harness.io
@@ -36,16 +41,20 @@ metadata:
     ## Jira plugin - Start
     #jira/project-key: IDP
     ## Jira plugin - End
-  tags:
-    - yournamehere
+
 spec:
-  type: service
-  owner: change-value
   lifecycle: experimental
   consumesApis:
-    - spotify
+    - api:spotify
   providesApis:
-    - petstore
+    - api:petstore
+  sourceCode:
+    provider: Harness
+    repoName: idp-workshop
+    connectorRef: ""
+    branch: main
+    monoRepo: false
+    url: https://app.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/module/code/orgs/bless403org/projects/bless403ip2/repos/idp-workshop/files/main/~/
 #  system: yournamehere-system
 #  dependsOn:
 #    - component:default/yournamehere-service
